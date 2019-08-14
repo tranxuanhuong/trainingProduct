@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="myInput"/>
+<input type="button" value="kq" onclick="click()"/>
+<p id="view"></p>
+<script>
+    function check(num) {
+        let result=num+1;
+        return result;
+
+    }
+    function click() {
+        let valueInput=parseFloat(document.getElementById('myInput').value);
+        document.getElementById('view').innerHTML=check(valueInput);
+        
+    }
+
+</script>
+
+</body>
+</html>

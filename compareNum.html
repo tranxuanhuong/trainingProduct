@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="num1">
+<input type="text" id="num2">
+<input type="button" value="sum" onclick="sum()">
+<script>
+    function sum(num1,num2) {
+       num1 =parseInt(document.getElementById('num1').value);
+       num2=parseInt(document.getElementById('num2').value);
+       if (num1>num2){
+           alert('sô thứ nhất '+num1 +'lớn hơn số thứ 2'+'            '+num2);
+       }else {
+           let sum=num1+num2;
+           alert(sum);
+       }
+
+    }
+</script>
+</body>
+</html>

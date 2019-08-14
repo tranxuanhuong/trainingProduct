@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhapSao">
+<input type="button" value="Display" onclick="display()" >
+<input type="text" disabled id="hide">
+<script>
+    let  arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let  arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function display() {
+        let start = document.getElementById("nhapSao").value;
+        for (i = 0; i < arr1.length; i++) {
+            if (start == arr1[i]) {
+                document.getElementById("hide").value = arr2[i];
+                break;
+            }else {
+                document.getElementById("hide").value = "nhap lai";
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
